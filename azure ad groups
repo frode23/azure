@@ -1,0 +1,14 @@
+
+Create Azure AD Group - PowerShell
+
+Install-Module -Name AzureAD
+Connect-AzureAD
+
+New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
+# først gruppen og så bruker
+Add-AzureADGroupMember -ObjectId "d68624fb-fb43-4ea7-92ad-04528b3464c7" -RefObjectId "8d5bb938-6a8c-42a1-9f41-c2a7331b320a"
+
+
+az ad group create --display-name Sales --mail-nickname Sales
+az ad group member check --group Sales --member-id xxxxxxxx-xxxx
+az ad group member add --group Sales --member-id xxxxxxxx-xxxx
