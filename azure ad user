@@ -1,14 +1,16 @@
+Create Azure AD User - PowerShell
+
 Install-Module -Name AzureAD
 Connect-AzureAD
 
-$PasswordProfile = New-Object -TypeName
-Microsoft.Open.AzureAD.Model.PasswordProfile
-$PasswordProfile.Password = "P@ssw0rd8!"
+$PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+$PasswordProfile.Password = "Hitman23"
 $PasswordProfile.EnforceChangePasswordPolicy = $true
-New-AzureADUser -DisplayName "Pat Smith" -PasswordProfile $PasswordProfile `
--UserPrincipalName "pats@timw.info" -AccountEnabled $true
-Create Azure AD User - PowerShell
 
+New-AzureADUser -DisplayName "Magnus" -PasswordProfile $PasswordProfile -UserPrincipalName "magnus@labarea51.onmicrosoft.com" -mailnickname maggun -AccountEnabled $true
+
+
+# Dette er cli 
 az ad user create --display-name "Adee Lester" \
 --password "P@$$w0rd13!" --user-principal-name "adee@timw.info" \
 --force-change-password-next-login --output table
