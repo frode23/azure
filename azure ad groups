@@ -5,8 +5,10 @@ Install-Module -Name AzureAD
 Connect-AzureAD
 
 New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled $false -SecurityEnabled $true -MailNickName "Marketing"
+New-AzureADGroup -Description "it" -DisplayName "it" -MailEnabled $false -SecurityEnabled $true -MailNickName "it"
 # først gruppen og så bruker
 Add-AzureADGroupMember -ObjectId "d68624fb-fb43-4ea7-92ad-04528b3464c7" -RefObjectId "8d5bb938-6a8c-42a1-9f41-c2a7331b320a"
+Add-AzureADGroupMember -ObjectId "b5483fc2-6b70-4915-b995-f766ff274a6f" -RefObjectId "482ebff9-8fc1-41f2-af38-930a5a30dbb6"
 
 
 az ad group create --display-name Sales --mail-nickname Sales
