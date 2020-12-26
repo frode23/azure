@@ -11,6 +11,10 @@ Add-AzureADGroupMember -ObjectId "d68624fb-fb43-4ea7-92ad-04528b3464c7" -RefObje
 Add-AzureADGroupMember -ObjectId "b5483fc2-6b70-4915-b995-f766ff274a6f" -RefObjectId "482ebff9-8fc1-41f2-af38-930a5a30dbb6"
 
 
+Get-AzureADUser -ObjectId jonas@labarea51.onmicrosoft.com |fl
+Set-AzureADUser -ObjectId magnus@labarea51.onmicrosoft.com -Department development
+
+
 az ad group create --display-name Sales --mail-nickname Sales
 az ad group member check --group Sales --member-id xxxxxxxx-xxxx
 az ad group member add --group Sales --member-id xxxxxxxx-xxxx
