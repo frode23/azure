@@ -1,0 +1,1 @@
+azcopy /source:https://storagetestlabfg.blob.core.windows.net/testazcopy /dest:https://storagetestlabfg.blob.core.windows.net/testazcopy/images /pattern:"pipe sprekk1.jpg" /sourcekey:"RgUD2xw9JRrzIMjG8tg+2EMkP2uyXs3QfjIKAUMg50KrC3S40ibXa9zhopBGhWzaq5MctZn8tEOdFisJYSbe8Q==" /destkey:"RgUD2xw9JRrzIMjG8tg+2EMkP2uyXs3QfjIKAUMg50KrC3S40ibXa9zhopBGhWzaq5MctZn8tEOdFisJYSbe8Q=="
