@@ -1,0 +1,8 @@
+New-AzVm -ResourceGroupName ‘ps-course-rg’ -Name ‘windows-1’`
+-Location ‘NorthCentralUS’ -VirtualNetworkName ‘main-vnet’`
+-SubnetName ‘backend’ -SecurityGroupName ‘myNetworkSecurityGroup’`
+-PublicIpAddressName ‘myPublicIpAddress’-OpenPorts 80,3389
+
+
+
+Set-AzVM -Redeploy -ResourceGroupName ‘ps-course-rg’ -Name “linux-1“
