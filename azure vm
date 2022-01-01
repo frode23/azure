@@ -6,3 +6,4 @@ New-AzVm -ResourceGroupName ‘ps-course-rg’ -Name ‘windows-1’`
 
 
 Set-AzVM -Redeploy -ResourceGroupName ‘ps-course-rg’ -Name “linux-1“
+editert i github
